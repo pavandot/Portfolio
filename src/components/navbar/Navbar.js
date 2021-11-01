@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { User, Code, DocumentText1, Moon, Sun1, TextalignJustifycenter, CloseCircle, SecurityUser } from "iconsax-react";
+import { User, Code, DocumentText1, Moon, Sun1, TextalignJustifycenter, CloseCircle, SecurityUser, Teacher } from "iconsax-react";
 import logo from "../../img/logo.svg";
 import { ReactSVG } from "react-svg";
 const Navbar = ({ isDark, setIsDark }) => {
@@ -19,6 +19,13 @@ const Navbar = ({ isDark, setIsDark }) => {
 								<SecurityUser size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 								{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
 								<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
+							</li>
+						</a>
+						<a href='#skills'>
+							<li className='flex items-center cursor-pointer '>
+								<Teacher size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+								{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
+								<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>SKILLS</span>
 							</li>
 						</a>
 						<li className='flex items-center  cursor-pointer '>
