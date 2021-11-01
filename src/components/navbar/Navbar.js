@@ -9,16 +9,18 @@ const Navbar = ({ isDark, setIsDark }) => {
 	return (
 		<div className='fixed w-full'>
 			<section className=' bg-nav-light dark:bg-nav-dark transition-colors duration-300 h-[58px] sm:h-auto flex sm:block items-center flex-col'>
-				<nav className=' flex justify-between items-center sm:py-4 sm:px-6 w-full px-3'>
+				<nav className=' flex justify-between items-center sm:py-4 sm:px-6 w-full px-3 h-[4rem]'>
 					<div>
 						<ReactSVG src={logo} className='w-[48px]' />
 					</div>
-					<ul className='justify-around w-[50%] items-center hidden sm:flex'>
-						<li className='flex items-center cursor-pointer '>
-							<SecurityUser size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
-							<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
-						</li>
+					<ul className='justify-around w-[70%] md:w-[50%] items-center hidden sm:flex'>
+						<a href='#about'>
+							<li className='flex items-center cursor-pointer '>
+								<SecurityUser size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+								{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
+								<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
+							</li>
+						</a>
 						<li className='flex items-center  cursor-pointer '>
 							<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 							<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
@@ -56,11 +58,13 @@ const Navbar = ({ isDark, setIsDark }) => {
 					</div>
 				</nav>
 				<div className={`${isOpen ? "h-auto" : "hidden h-0"}  transition-all duration-500 bg-nav-light dark:bg-nav-dark w-full absolute top-[57px]`}>
-					<div className='flex items-center cursor-pointer p-2'>
-						<User size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-						{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
-						<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
-					</div>
+					<a href='#about' onClick={() => setIsOpen(false)}>
+						<div className='flex items-center cursor-pointer p-2'>
+							<User size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+							{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
+							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
+						</div>
+					</a>
 					<div className='flex items-center  cursor-pointer p-2'>
 						<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 						<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>

@@ -2,10 +2,10 @@ import React from "react";
 import TypeIt from "typeit-react";
 const Main = ({ isDark }) => {
 	return (
-		<section className=' bg-background-light min-h-screen  dark:bg-background-dark transition-colors duration-300 flex pt-[100px] sm:px-28 px-5 w-full justify-around sm:justify-between flex-col-reverse sm:flex-row '>
-			<div className=' sm:pl-14 sm:pt-10 sm:w-[55%] '>
+		<section className=' bg-background-light min-h-screen  dark:bg-background-dark transition-colors duration-300 flex pt-[100px] sm:px-[100px] px-5 w-full justify-around items-center sm:justify-between flex-col-reverse md:flex-row '>
+			<div className='   md:w-[55%] '>
 				<h1 className={`${isDark ? "text-white" : "text-text-bold"} font-bold  text-[1.5rem] sm:text-[2rem]`}>👋 My name is</h1>
-				<h1 className={` text-[3rem] sm:text-[3.5rem] font-bold ${isDark ? "text-white" : "text-text-bold"}`}>
+				<h1 className={` text-[2.5rem] sm:text-[3.5rem] font-bold ${isDark ? "text-white" : "text-text-bold"}`}>
 					<span> Pavan</span> <span className='bg-gradient-to-r from-[#FA8142] to-[#FF4088] text-transparent bg-clip-text'> Kumar </span>{" "}
 				</h1>
 				<TypeIt
@@ -31,7 +31,7 @@ const Main = ({ isDark }) => {
 				</div>
 			</div>
 
-			<div className='text-background-light dark:text-background-dark sm:pt-[2.8rem]'>
+			<div className='text-background-light dark:text-background-dark '>
 				<img src={`${isDark ? "https://pavandot.netlify.app/static/media/Light-Hero.ab1d1f10.svg" : "https://pavandot.netlify.app/static/media/Dark-Hero.27aa77ec.svg"}`} alt='img' width='350' />
 			</div>
 		</section>
