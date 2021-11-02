@@ -1,6 +1,5 @@
 import React from "react";
 import { Teacher } from "iconsax-react";
-import javascriptSvg from "../../img/javascript.svg";
 import SingleSkillComp from "./SingleSkillComp";
 const Skills = ({ isDark }) => {
 	const iconColorLight = "#12181b";

@@ -28,14 +28,18 @@ const Navbar = ({ isDark, setIsDark }) => {
 								<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>SKILLS</span>
 							</li>
 						</a>
-						<li className='flex items-center  cursor-pointer '>
-							<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
-						</li>
-						<li className='flex items-center  cursor-pointer '>
-							<DocumentText1 size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
-						</li>
+						<a href='#projects'>
+							<li className='flex items-center  cursor-pointer '>
+								<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+								<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
+							</li>
+						</a>
+						<a href='https://drive.google.com/file/d/1TChEHQtNv8Qv7B_Yj2plT95Zna0Li5RF/view?usp=sharing' target='_blank' rel='noreferrer'>
+							<li className='flex items-center  cursor-pointer '>
+								<DocumentText1 size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+								<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
+							</li>
+						</a>
 						<li onClick={() => setIsDark(!isDark)} className='transition-all duration-300'>
 							<div className={`${!isDark ? "block" : "hidden"}  cursor-pointer`}>
 								<Moon size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bold' />
@@ -68,18 +72,27 @@ const Navbar = ({ isDark, setIsDark }) => {
 					<a href='#about' onClick={() => setIsOpen(false)}>
 						<div className='flex items-center cursor-pointer p-2'>
 							<User size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
 							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
 						</div>
 					</a>
-					<div className='flex items-center  cursor-pointer p-2'>
-						<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-						<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
-					</div>
-					<div className='flex items-center  cursor-pointer p-2'>
-						<DocumentText1 size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-						<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
-					</div>
+					<a href='#skills' onClick={() => setIsOpen(false)}>
+						<div className='flex items-center cursor-pointer p-2'>
+							<Teacher size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>SKILLS</span>
+						</div>
+					</a>
+					<a href='#projects' onClick={() => setIsOpen(false)}>
+						<div className='flex items-center  cursor-pointer p-2'>
+							<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
+						</div>
+					</a>
+					<a href='https://drive.google.com/file/d/1TChEHQtNv8Qv7B_Yj2plT95Zna0Li5RF/view?usp=sharing' target='_blank' rel='noreferrer'>
+						<div className='flex items-center  cursor-pointer p-2'>
+							<DocumentText1 size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
+						</div>
+					</a>
 				</div>
 			</section>
 		</div>
