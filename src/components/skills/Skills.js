@@ -37,7 +37,7 @@ const Skills = ({ isDark }) => {
 		},
 	];
 	return (
-		<section className='bg-background-light dark:bg-background-dark min-h-screen transition-colors duration-300 md:px-[100px] px-5 py-10' id='skills'>
+		<section className='bg-background-light dark:bg-background-dark  transition-colors duration-300 md:px-[100px] px-5 py-10' id='skills'>
 			<div className='flex items-center cursor-pointer '>
 				<Teacher size='27' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 				<span className='font-bold text-[1.5rem] self-end text-text-bold dark:text-[#fff] pl-[2px] transition-all duration-500'>SKILLS</span>
