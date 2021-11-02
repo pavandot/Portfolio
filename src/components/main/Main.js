@@ -24,9 +24,8 @@ const Main = ({ isDark }) => {
 				/>
 				<div>
 					<h1 className={`${isDark ? "text-text-dark" : "text-text-light"} text-2xl font-medium mt-5`}>
-						Hi! I am
-						<span className='bg-gradient-to-r from-[#FA8142] to-[#FF4088] text-white rounded p-[1px] sm:p-[2px] mx-[5px]'> web developer </span> focused on crafting great web experiences. I enjoy creating beautifully designed, intuitive and functional
-						websites.
+						Hi! I am a<span className='bg-gradient-to-r from-[#FA8142] to-[#FF4088] text-white rounded p-[1px] sm:p-[2px] mx-[5px]'> web developer </span> focused on crafting great web experiences. I enjoy creating beautifully designed, intuitive and
+						functional websites.
 					</h1>
 				</div>
 			</div>
