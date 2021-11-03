@@ -3,7 +3,7 @@ import React from "react";
 const ProjectComp = ({ isDark, project }) => {
 	const { title, img, description, demo, source } = project;
 	return (
-		<div className=' bg-nav-light dark:bg-nav-dark p-[15px] rounded-md'>
+		<div className=' bg-nav-light dark:bg-nav-dark p-[15px] rounded-md shadow-md hover:shadow-lg'>
 			<div>
 				<img src={img} alt='MovieDb' />
 			</div>

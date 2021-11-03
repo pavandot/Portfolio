@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { User, Code, DocumentText1, Moon, Sun1, TextalignJustifycenter, CloseCircle, SecurityUser, Teacher } from "iconsax-react";
+import { User, Code, DocumentText1, Moon, Sun1, TextalignJustifycenter, CloseCircle, SecurityUser, Teacher, DocumentDownload } from "iconsax-react";
 import logo from "../../img/logo.svg";
 import { ReactSVG } from "react-svg";
 const Navbar = ({ isDark, setIsDark }) => {
@@ -36,7 +36,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 						</a>
 						<a href='https://drive.google.com/file/d/1TChEHQtNv8Qv7B_Yj2plT95Zna0Li5RF/view?usp=sharing' target='_blank' rel='noreferrer'>
 							<li className='flex items-center  cursor-pointer '>
-								<DocumentText1 size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+								<DocumentDownload size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 								<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
 							</li>
 						</a>
@@ -89,7 +89,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 					</a>
 					<a href='https://drive.google.com/file/d/1TChEHQtNv8Qv7B_Yj2plT95Zna0Li5RF/view?usp=sharing' target='_blank' rel='noreferrer'>
 						<div className='flex items-center  cursor-pointer p-2'>
-							<DocumentText1 size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
+							<DocumentDownload size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
 						</div>
 					</a>
