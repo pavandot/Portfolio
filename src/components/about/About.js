@@ -4,7 +4,7 @@ const About = ({ isDark }) => {
 	const iconColorLight = "#12181b";
 	const iconColorDark = "#fff";
 	return (
-		<section className='bg-background-light dark:bg-background-dark px-5 md:px-[100px] transition-colors duration-300 flex w-full justify-center items-center md:items-start md:justify-between py-10 flex-col  md:flex-row-reverse ' id='about'>
+		<section className='bg-background-light dark:bg-background-dark px-5 md:px-[100px] transition-colors duration-300 flex w-full justify-center items-center md:items-start md:justify-between py-10 flex-col  md:flex-row-reverse' id='about'>
 			<div className='md:w-[70%] mb-10 md:pb-auto '>
 				<div className='flex items-center  mb-[15px] '>
 					<SecurityUser size='27' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />

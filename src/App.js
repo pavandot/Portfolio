@@ -6,7 +6,7 @@ import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 function App() {
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(true);
 	return (
 		<div className={`${isDark && "dark"}`}>
 			<Navbar isDark={isDark} setIsDark={setIsDark} />
