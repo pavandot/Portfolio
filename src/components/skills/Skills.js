@@ -35,6 +35,11 @@ const Skills = ({ isDark }) => {
 			img: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
 			description: "Git is a free and open source distributed version control system .",
 		},
+		{
+			id: 6,
+			title: "Next.js",
+			img: "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png",
+		},
 	];
 	return (
 		<section className='bg-background-light dark:bg-background-dark  transition-colors duration-300 md:px-[100px] px-5 py-10' id='skills'>
