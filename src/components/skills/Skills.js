@@ -43,11 +43,11 @@ const Skills = ({ isDark }) => {
 	];
 	return (
 		<section className='bg-background-light dark:bg-background-dark  transition-colors duration-300 md:px-[100px] px-5 py-10' id='skills'>
-			<div className='flex items-center cursor-pointer '>
+			<div className='flex items-center cursor-pointer max-w-6xl mx-auto '>
 				<Teacher size='27' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 				<span className='font-bold text-[1.5rem] self-end text-text-bold dark:text-[#fff] pl-[2px] transition-all duration-500'>SKILLS</span>
 			</div>
-			<div className='pt-10 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5'>
+			<div className='pt-10 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5 max-w-6xl mx-auto'>
 				{skills.map((skill) => {
 					return <SingleSkillComp isDark={isDark} skill={skill} key={skill.id} />;
 				})}

@@ -9,7 +9,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 	return (
 		<div className='fixed w-full'>
 			<section className=' bg-nav-light dark:bg-nav-dark transition-colors duration-300 h-[58px] sm:h-auto flex sm:block items-center flex-col'>
-				<nav className=' flex justify-between items-center sm:py-4 sm:px-6 w-full px-3 h-[4rem]'>
+				<nav className=' flex justify-between items-center sm:py-4 sm:px-6 w-full px-3 h-[4rem] max-w-7xl mx-auto'>
 					<div>
 						<ReactSVG src={logo} className='w-[48px]' />
 					</div>
