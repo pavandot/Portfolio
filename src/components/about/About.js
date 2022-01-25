@@ -4,8 +4,8 @@ const About = ({ isDark }) => {
 	const iconColorLight = "#12181b";
 	const iconColorDark = "#fff";
 	return (
-		<section className='bg-background-light dark:bg-background-dark transition-colors duration-300 '>
-			<section className='  px-5 md:px-[100px] transition-colors duration-300 flex w-full justify-center items-center md:items-start md:justify-between py-10 flex-col  md:flex-row-reverse max-w-7xl mx-auto' id='about'>
+		<section className='bg-background-light dark:bg-background-dark transition-colors duration-300 scroll-mt-28 ' id='about'>
+			<section className='  px-5 md:px-[100px] transition-colors duration-300 flex w-full justify-center items-center md:items-start md:justify-between py-10 flex-col  md:flex-row-reverse max-w-7xl mx-auto'>
 				<div className='md:w-[70%] mb-10 md:pb-auto '>
 					<div className='flex items-center  mb-[15px] '>
 						<SecurityUser size='27' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />

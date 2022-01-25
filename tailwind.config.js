@@ -1,7 +1,6 @@
 module.exports = {
-	mode: "jit",
-	purge: ["./public/*.html", "./src/*.js", "./src/*/*/*.js"],
-	darkMode: "class", // or 'media' or 'class'
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	darkMode: "class",
 	theme: {
 		extend: {
 			colors: {
@@ -14,9 +13,6 @@ module.exports = {
 				"text-dark": "#b2becd",
 			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };
