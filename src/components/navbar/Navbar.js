@@ -8,36 +8,38 @@ const Navbar = ({ isDark, setIsDark }) => {
 	const iconColorDark = "#d0cde1";
 	return (
 		<div className='fixed w-full'>
-			<section className=' bg-nav-light dark:bg-nav-dark transition-colors duration-300 h-[58px] sm:h-auto flex sm:block items-center flex-col'>
-				<nav className=' flex justify-between items-center sm:py-4 sm:px-6 w-full px-3 h-[4rem] max-w-7xl mx-auto'>
+			<section className=' bg-nav-light dark:bg-nav-dark flex h-[58px] flex-col items-center transition-colors duration-300 sm:block sm:h-auto'>
+				<nav className=' mx-auto flex h-[4rem] w-full max-w-7xl items-center justify-between px-3 sm:py-4 sm:px-6'>
 					<div>
-						<ReactSVG src={logo} className='w-[48px]' />
+						<a href='#home'>
+							<ReactSVG src={logo} className='w-[48px]' />
+						</a>
 					</div>
-					<ul className='justify-around w-[70%] md:w-[50%] items-center hidden sm:flex'>
+					<ul className='hidden w-[70%] items-center justify-around sm:flex md:w-[50%]'>
 						<a href='#about'>
-							<li className='flex items-center cursor-pointer '>
+							<li className='flex cursor-pointer items-center '>
 								<SecurityUser size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 								{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
-								<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
+								<span className='self-end pl-[2px] text-[1.2rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>ABOUT</span>
 							</li>
 						</a>
 						<a href='#skills'>
-							<li className='flex items-center cursor-pointer '>
+							<li className='flex cursor-pointer items-center '>
 								<Teacher size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
 								{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
-								<span className='font-bold text-[1.2rem] self-end text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>SKILLS</span>
+								<span className='self-end pl-[2px] text-[1.2rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>SKILLS</span>
 							</li>
 						</a>
 						<a href='#projects'>
-							<li className='flex items-center  cursor-pointer '>
+							<li className='flex cursor-pointer  items-center '>
 								<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-								<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
+								<span className='pl-[2px] text-[1.2rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>PROJECT</span>
 							</li>
 						</a>
 						<a href='https://drive.google.com/file/d/1TChEHQtNv8Qv7B_Yj2plT95Zna0Li5RF/view?usp=sharing' target='_blank' rel='noreferrer'>
-							<li className='flex items-center  cursor-pointer '>
+							<li className='flex cursor-pointer  items-center '>
 								<DocumentDownload size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-								<span className='font-bold text-[1.2rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
+								<span className='pl-[2px] text-[1.2rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>RESUME</span>
 							</li>
 						</a>
 						<li onClick={() => setIsDark(!isDark)} className='transition-all duration-300'>
@@ -49,8 +51,8 @@ const Navbar = ({ isDark, setIsDark }) => {
 							</div>
 						</li>
 					</ul>
-					<div className='sm:hidden flex'>
-						<div onClick={() => setIsDark(!isDark)} className='transition-all duration-300 pr-5'>
+					<div className='flex sm:hidden'>
+						<div onClick={() => setIsDark(!isDark)} className='pr-5 transition-all duration-300'>
 							<div className={`${!isDark ? "block" : "hidden"}  cursor-pointer`}>
 								<Moon size='30' color={isDark ? iconColorDark : iconColorLight} variant='Bold' />
 							</div>
@@ -68,29 +70,29 @@ const Navbar = ({ isDark, setIsDark }) => {
 						</div>
 					</div>
 				</nav>
-				<div className={`${isOpen ? "h-auto" : "hidden h-0"}  transition-all duration-500 bg-nav-light dark:bg-nav-dark w-full absolute top-[57px]`}>
+				<div className={`${isOpen ? "h-auto" : "hidden h-0"}  bg-nav-light dark:bg-nav-dark absolute top-[57px] w-full transition-all duration-500`}>
 					<a href='#about' onClick={() => setIsOpen(false)}>
-						<div className='flex items-center cursor-pointer p-2'>
+						<div className='flex cursor-pointer items-center p-2'>
 							<User size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>ABOUT</span>
+							<span className='pl-[2px] text-[1rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>ABOUT</span>
 						</div>
 					</a>
 					<a href='#skills' onClick={() => setIsOpen(false)}>
-						<div className='flex items-center cursor-pointer p-2'>
+						<div className='flex cursor-pointer items-center p-2'>
 							<Teacher size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>SKILLS</span>
+							<span className='pl-[2px] text-[1rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>SKILLS</span>
 						</div>
 					</a>
 					<a href='#projects' onClick={() => setIsOpen(false)}>
-						<div className='flex items-center  cursor-pointer p-2'>
+						<div className='flex cursor-pointer  items-center p-2'>
 							<Code size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>PROJECT</span>
+							<span className='pl-[2px] text-[1rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>PROJECT</span>
 						</div>
 					</a>
 					<a href='https://drive.google.com/file/d/1TChEHQtNv8Qv7B_Yj2plT95Zna0Li5RF/view?usp=sharing' target='_blank' rel='noreferrer'>
-						<div className='flex items-center  cursor-pointer p-2'>
+						<div className='flex cursor-pointer  items-center p-2'>
 							<DocumentDownload size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-							<span className='font-bold text-[1rem] text-gray-500 dark:text-[#b2becd] pl-[2px] transition-all duration-500'>RESUME</span>
+							<span className='pl-[2px] text-[1rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>RESUME</span>
 						</div>
 					</a>
 				</div>
