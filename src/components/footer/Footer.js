@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import reactIcon from "../public/img/reactjs.svg";
-import tailwindCss from "../public/img/tailwindcss.svg";
+import reactIcon from "../../img/reactjs.svg";
+import tailwindCss from "../../img/tailwindcss.svg";
 
 const Footer = ({ isDark }) => {
 	return (
@@ -13,14 +12,10 @@ const Footer = ({ isDark }) => {
 						Fix it on GitHub
 					</a>
 				</h1>
-				<div className='flex mt-6 justify-center '>
-					<h1 className={`${isDark ? "text-text-dark" : "text-text-light"} `}>Created with</h1>
-					<div className=' mx-2'>
-						<Image src={reactIcon} alt='react' width='20' height='20' />
-					</div>
-					<div className=' mr-2'>
-						<Image src={tailwindCss} alt='react' width='20' height='20' />
-					</div>
+				<div className='flex mt-6 justify-center'>
+					<h1 className={`${isDark ? "text-text-dark" : "text-text-light"}`}>Created with</h1>
+					<img src={reactIcon} alt='react' width='20' className=' mx-2' />
+					<img src={tailwindCss} alt='react' width='20' className=' mr-2' />
 					<a href='https://github.com/pavandot/' className=' text-[#7ca9f5]'>
 						by Pavan Kumar
 					</a>

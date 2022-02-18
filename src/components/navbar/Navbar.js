@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import { User, Code, Moon, Sun1, TextalignJustifycenter, CloseCircle, SecurityUser, Teacher, DocumentDownload } from "iconsax-react";
-import logo from "../public/img/logo.svg";
-
+import { User, Code, DocumentText1, Moon, Sun1, TextalignJustifycenter, CloseCircle, SecurityUser, Teacher, DocumentDownload } from "iconsax-react";
+import logo from "../../img/logo.svg";
+import { ReactSVG } from "react-svg";
 const Navbar = ({ isDark, setIsDark }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const iconColorLight = "#3F3D56";
 	const iconColorDark = "#d0cde1";
 	return (
-		<div className='fixed w-full z-50'>
+		<div className='fixed w-full'>
 			<section className=' bg-nav-light dark:bg-nav-dark flex h-[58px] flex-col items-center transition-colors duration-300 sm:block sm:h-auto'>
 				<nav className=' mx-auto flex h-[4rem] w-full max-w-7xl items-center justify-between px-3 sm:py-4 sm:px-6'>
 					<div>
 						<a href='#home'>
-							{/* <ReactSVG src={logo} className='w-[48px]' /> */} <Image src={logo} width='48' height='48' alt='logo' />
+							<ReactSVG src={logo} className='w-[48px]' />
 						</a>
 					</div>
 					<ul className='hidden w-[70%] items-center justify-around sm:flex md:w-[50%]'>

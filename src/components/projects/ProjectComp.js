@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image";
+
 const ProjectComp = ({ isDark, project }) => {
 	const { title, img, description, demo, source } = project;
 	return (
 		<div className=' bg-nav-light dark:bg-nav-dark p-[15px] rounded-md shadow-md hover:shadow-lg'>
 			<div>
-				<Image src={img} alt='MovieDb' className='h-full w-full' />
+				<img src={img} alt='MovieDb' />
 			</div>
 			<div>
 				<h1 className='text-text-bold dark:text-[#fff] text-xl font-bold text-center py-3'>{title}</h1>
