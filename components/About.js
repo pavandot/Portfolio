@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { SecurityUser } from "iconsax-react";
 const About = ({ isDark }) => {
 	const iconColorLight = "#12181b";
@@ -33,7 +34,7 @@ const About = ({ isDark }) => {
 					</div>
 				</div>
 				<div className='mr-[50px] md:w-[30%]'>
-					<img src='https://pavandot.netlify.app/static/media/profile.275b4e06.jpg' alt='my img' width='300' className=' rounded-lg' />
+					<Image src='https://pavandot.netlify.app/static/media/profile.275b4e06.jpg' alt='my img' width='300' height='300' className=' rounded-lg' />
 				</div>
 			</section>
 		</section>

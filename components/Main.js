@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+import LightHero from "../public/img/Light-Hero.svg";
+import DarkHero from "../public/img/Dark-Hero.svg";
 import TypeIt from "typeit-react";
 const Main = ({ isDark }) => {
 	return (
@@ -32,7 +35,7 @@ const Main = ({ isDark }) => {
 				</div>
 
 				<div className='text-background-light dark:text-background-dark '>
-					<img src={`${isDark ? "https://pavandot.netlify.app/static/media/Light-Hero.ab1d1f10.svg" : "https://pavandot.netlify.app/static/media/Dark-Hero.27aa77ec.svg"}`} alt='img' width='350' />
+					<Image src={`${isDark ? "https://pavandot.netlify.app/static/media/Light-Hero.ab1d1f10.svg" : "https://pavandot.netlify.app/static/media/Dark-Hero.27aa77ec.svg"}`} alt='img' width='350' height='350' />
 				</div>
 			</div>
 		</section>
