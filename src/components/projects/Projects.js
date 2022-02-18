@@ -17,12 +17,12 @@ const Projects = ({ isDark }) => {
 		},
 	];
 	return (
-		<section className='bg-background-light dark:bg-background-dark  transition-colors duration-300 md:px-[100px] px-5 py-10 scroll-mt-[4rem]' id='projects'>
-			<div className='flex items-center  cursor-pointer max-w-6xl mx-auto '>
+		<section className='bg-background-light dark:bg-background-dark  scroll-mt-[4rem] px-5 py-10 transition-colors duration-300 lg:px-[100px]' id='projects'>
+			<div className='mx-auto flex  max-w-6xl cursor-pointer items-center '>
 				<Code size='27' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-				<span className='font-bold text-[1.5rem] self-end text-text-bold dark:text-[#fff] pl-[2px] transition-all duration-500'>PROJECTS</span>
+				<span className='text-text-bold self-end pl-[2px] text-[1.5rem] font-bold transition-all duration-500 dark:text-[#fff]'>PROJECTS</span>
 			</div>
-			<div className='grid grid-cols-1 sm:grid-cols-2 mt-10 gap-5 max-w-6xl mx-auto'>
+			<div className='mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2'>
 				{projects.map((project) => {
 					return <ProjectComp isDark={isDark} project={project} key={project.id} />;
 				})}
