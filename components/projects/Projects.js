@@ -1,6 +1,6 @@
 import React from "react";
 import { Code } from "iconsax-react";
-import MovieDB from "../../img/MovieDB.png";
+import MovieDB from "../../public/img/MovieDB.png";
 import ProjectComp from "./ProjectComp";
 
 const Projects = ({ isDark }) => {
