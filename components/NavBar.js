@@ -16,7 +16,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 							{/* <ReactSVG src={logo} className='w-[48px]' /> */} <Image src={logo} width='48' height='48' alt='logo' />
 						</a>
 					</div>
-					<ul className='hidden w-[70%] items-center justify-around sm:flex md:w-[50%]'>
+					<ul className='hidden w-[80%] items-center justify-around sm:flex lg:w-[50%]'>
 						<a href='#about'>
 							<li className='flex cursor-pointer items-center '>
 								<SecurityUser size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
