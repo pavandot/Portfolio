@@ -13,7 +13,7 @@ const Projects = ({ isDark }) => {
 			img: MovieDB,
 			description: "MovieDB is web application to discover new movies and tv shows and to maintain your favorites and watch list. ",
 			demo: "https://pavan-movie-db.vercel.app/",
-			source: "https://github.com/pavandot/MovieDB",
+			source: "https://github.com/pavandot/typescript-moviedb",
 		},
 	];
 	return (
