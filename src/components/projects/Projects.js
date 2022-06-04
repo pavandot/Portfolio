@@ -1,6 +1,7 @@
 import React from 'react';
 import { Code } from 'iconsax-react';
 import MovieDB from '../../../public/img/MovieDB.png';
+import DailyUi from '../../../public/img/Daily-UI.png';
 import ProjectComp from './ProjectComp';
 
 const Projects = ({ isDark }) => {
@@ -14,6 +15,14 @@ const Projects = ({ isDark }) => {
 			description: 'MovieDB is web application to discover new movies and tv shows and to maintain your favorites and watch list. ',
 			demo: 'https://pavan-movie-db.vercel.app/',
 			source: 'https://github.com/pavandot/typescript-moviedb',
+		},
+		{
+			id: 2,
+			title: 'Daily UI',
+			img: DailyUi,
+			description: 'Daily UI is a collection of UI components and mini project demos. ',
+			demo: 'https://daily-ui-pavan.vercel.app/',
+			source: 'https://github.com/pavandot/Daily-UI',
 		},
 	];
 	return (
