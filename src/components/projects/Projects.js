@@ -2,6 +2,7 @@ import React from 'react';
 import { Code } from 'iconsax-react';
 import MovieDB from '../../../public/img/MovieDB.png';
 import DailyUi from '../../../public/img/Daily-UI.png';
+import Shop from '../../../public/img/Shop.png';
 import ProjectComp from './ProjectComp';
 
 const Projects = ({ isDark }) => {
@@ -10,6 +11,14 @@ const Projects = ({ isDark }) => {
 	const projects = [
 		{
 			id: 1,
+			title: 'Shop',
+			img: Shop,
+			description: 'An online shopping application built using Next.js and Express.js. ',
+			demo: 'https://shop-pavan.vercel.app/',
+			source: 'https://github.com/pavandot/Shop-frontend.git',
+		},
+		{
+			id: 2,
 			title: 'MovieDB',
 			img: MovieDB,
 			description: 'MovieDB is web application to discover new movies and tv shows and to maintain your favorites and watch list. ',
