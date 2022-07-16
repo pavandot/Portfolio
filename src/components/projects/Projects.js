@@ -45,7 +45,7 @@ const Projects = ({ isDark }) => {
 					PROJECTS
 				</span>
 			</div>
-			<div className='mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2'>
+			<div className='mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2'>
 				{projects.map((project) => {
 					return <ProjectComp isDark={isDark} project={project} key={project.id} />;
 				})}

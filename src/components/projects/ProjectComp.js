@@ -5,7 +5,7 @@ const ProjectComp = ({ isDark, project }) => {
 	return (
 		<div className=' bg-nav-light dark:bg-nav-dark p-[15px] flex flex-col justify-between rounded-md shadow-md hover:shadow-lg'>
 			<div>
-				<div className=' h-[300px] overflow-hidden'>
+				<div className=' lg:h-[300px] overflow-hidden'>
 					<Image src={img} alt='MovieDb' className='h-full  w-full' />
 				</div>
 				<h1 className='text-text-bold dark:text-[#fff] text-xl font-bold text-center py-3'>{title}</h1>
