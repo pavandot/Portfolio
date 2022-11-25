@@ -13,7 +13,7 @@ export default function Home() {
 			<div className={`${isDark && 'dark'}`}>
 				<Navbar isDark={isDark} setIsDark={setIsDark} />
 				<Main isDark={isDark} />
-				<About isDark={isDark} />
+				{/* <About isDark={isDark} /> */}
 				<Skills isDark={isDark} />
 				<Projects isDark={isDark} />
 				<Footer isDark={isDark} />

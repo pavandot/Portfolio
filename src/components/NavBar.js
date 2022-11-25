@@ -9,7 +9,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 	const iconColorDark = '#d0cde1';
 	return (
 		<div className='fixed w-full z-50'>
-			<section className=' bg-nav-light dark:bg-nav-dark flex h-[58px] flex-col items-center transition-colors duration-300 sm:block sm:h-auto'>
+			<section className=' bg-nav-light/50 dark:bg-nav-dark/50 flex h-[58px] flex-col items-center transition-colors duration-300 sm:block sm:h-auto backdrop-blur-xl'>
 				<nav className=' mx-auto flex h-[4rem] w-full max-w-7xl items-center justify-between px-3 sm:py-4 sm:px-6'>
 					<div>
 						<a href='#home'>
@@ -17,15 +17,14 @@ const Navbar = ({ isDark, setIsDark }) => {
 						</a>
 					</div>
 					<ul className='hidden w-[80%] items-center justify-around sm:flex lg:w-[50%]'>
-						<a href='#about'>
+						{/* <a href='#about'>
 							<li className='flex cursor-pointer items-center '>
 								<SecurityUser size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />
-								{/* <User size='19.2' color={` ${isDark ? "#b2becd" : "#454e56"} `} variant='Bulk'  /> */}
 								<span className='self-end pl-[2px] text-[1.2rem] font-bold text-gray-500 transition-all duration-500 dark:text-[#b2becd]'>
 									ABOUT
 								</span>
 							</li>
-						</a>
+						</a> */}
 						<a href='#skills'>
 							<li className='flex cursor-pointer items-center '>
 								<Teacher size='25' color={isDark ? iconColorDark : iconColorLight} variant='Bulk' />

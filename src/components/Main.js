@@ -9,7 +9,7 @@ const Main = ({ isDark }) => {
 			className=' bg-background-light dark:bg-background-dark flex min-h-screen w-full items-center transition-colors duration-300'
 			id='home'
 		>
-			<div className=' bg-background-light  dark:bg-background-dark   mx-auto flex w-full max-w-7xl flex-col-reverse items-center justify-around px-5 pt-[100px] transition-colors duration-300 sm:justify-between md:flex-row lg:px-[100px] '>
+			<div className=' bg-background-light  dark:bg-background-dark   mx-auto flex w-full max-w-7xl flex-col-reverse items-center justify-around px-5 pt-[100px] transition-colors duration-300 sm:justify-between md:flex-row lg:px-[50px] '>
 				<div className='   md:w-[55%] '>
 					<h1 className={`${isDark ? 'text-white' : 'text-text-bold'} text-[1.5rem]  font-bold sm:text-[2rem]`}>👋 My name is</h1>
 					<h1 className={` text-[2.5rem] font-bold sm:text-[3.5rem] ${isDark ? 'text-white' : 'text-text-bold'}`}>
@@ -37,9 +37,27 @@ const Main = ({ isDark }) => {
 								{' '}
 								web developer{' '}
 							</span>{' '}
-							focused on crafting great web experiences. I enjoy creating beautifully designed, intuitive and functional
-							websites.
+							focused on crafting great web experiences. and this is my personal website where you’ll find all my works and
+							the stuff I’m currently thinking about.
 						</h1>
+					</div>
+					<div className='mt-5 mb-5 flex w-full  space-x-3'>
+						<a
+							href='https://github.com/pavandot'
+							target='_blank'
+							rel='noreferrer'
+							className=' text-text-light dark:text-text-dark rounded border-[2px] border-[#fa8142] px-[20px] py-[7px] font-semibold transition-colors duration-300 hover:bg-[#fa8142] hover:text-[#fff] dark:hover:text-[#fff]'
+						>
+							GitHub
+						</a>
+						<a
+							href='https://twitter.com/pavanreddy0850'
+							target='_blank'
+							rel='noreferrer'
+							className=' text-text-light dark:text-text-dark rounded border-[2px] border-[#09c372] px-[20px] py-[7px] font-semibold transition-colors duration-300 hover:bg-[#09c372] hover:text-[#fff] dark:hover:text-[#fff]'
+						>
+							Twitter
+						</a>
 					</div>
 				</div>
 
