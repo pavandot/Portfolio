@@ -6,10 +6,14 @@ import About from '../components/About';
 import Skills from '../components/skills/Skills';
 import Projects from '../components/projects/Projects';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 export default function Home() {
 	const [isDark, setIsDark] = useState(true);
 	return (
-		<div>
+		<>
+			<Head>
+				<title>Pavan</title>
+			</Head>
 			<div className={`${isDark && 'dark'}`}>
 				<Navbar isDark={isDark} setIsDark={setIsDark} />
 				<Main isDark={isDark} />
@@ -18,6 +22,6 @@ export default function Home() {
 				<Projects isDark={isDark} />
 				<Footer isDark={isDark} />
 			</div>
-		</div>
+		</>
 	);
 }
