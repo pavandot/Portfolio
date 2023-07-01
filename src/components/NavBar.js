@@ -43,7 +43,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 							</li>
 						</a>
 						<a
-							href='https://drive.google.com/file/d/19sKHtr3_ozXRV3L-w8K37WiAlLI17iSt/view?usp=sharing'
+							href='https://drive.google.com/file/d/1D0Cg3XM4RGe9bwNlSeMOkf1Bm8trg6fP/view?usp=sharing'
 							target='_blank'
 							rel='noreferrer'
 						>
